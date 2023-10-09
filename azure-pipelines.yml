@@ -17,6 +17,13 @@ variables:
 steps:
 - task: NuGetToolInstaller@1
 
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure subscription 1(e0ecb960-7f91-487f-bd42-fcc4bf6ab1c1)'
+    appType: 'webApp'
+    appName: 'WebAppCalculatorSD'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
@@ -28,10 +35,3 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'Azure subscription 1(e0ecb960-7f91-487f-bd42-fcc4bf6ab1c1)'
-    appType: 'webApp'
-    appName: 'WebAppCalculatorSD'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    deploymentMethod: 'auto'
