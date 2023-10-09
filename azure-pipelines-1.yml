@@ -14,6 +14,7 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  endpoint: 'https://webappcalculatorsd.azurewebsites.net'
 
 steps:
 - task: NuGetToolInstaller@1
