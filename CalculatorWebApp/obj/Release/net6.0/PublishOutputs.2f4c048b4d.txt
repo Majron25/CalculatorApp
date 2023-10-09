@@ -1,0 +1,7 @@
+D:\CalculatorApp\CalculatorApp\CalculatorWebApp\obj\Release\net6.0\PubTmp\Out\CalculatorWebApp.exe
+D:\CalculatorApp\CalculatorApp\CalculatorWebApp\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\CalculatorApp\CalculatorApp\CalculatorWebApp\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\CalculatorApp\CalculatorApp\CalculatorWebApp\obj\Release\net6.0\PubTmp\Out\CalculatorWebApp.dll
+D:\CalculatorApp\CalculatorApp\CalculatorWebApp\obj\Release\net6.0\PubTmp\Out\CalculatorWebApp.deps.json
+D:\CalculatorApp\CalculatorApp\CalculatorWebApp\obj\Release\net6.0\PubTmp\Out\CalculatorWebApp.runtimeconfig.json
+D:\CalculatorApp\CalculatorApp\CalculatorWebApp\obj\Release\net6.0\PubTmp\Out\CalculatorWebApp.pdb
