@@ -33,10 +33,7 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: AzureWebApp@1
+- task: DotNetCoreCLI@2
   inputs:
-    azureSubscription: '$(azureSubscription)'
-    appType: 'webApp'
-    appName: 'WebAppCalculatorSD'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    deploymentMethod: 'auto'
+    command: 'publish'
+    publishWebProjects: true
