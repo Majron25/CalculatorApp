@@ -27,7 +27,7 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Azure subscription 1(01a2685b-2d63-4792-9b28-fbc97a9a51df)'
+    azureSubscription: 'Azure subscription 1(e0ecb960-7f91-487f-bd42-fcc4bf6ab1c1)'
     appType: 'webApp'
     appName: 'WebAppCalculator'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
