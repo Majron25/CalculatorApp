@@ -22,6 +22,7 @@ steps:
     azureSubscription: 'Azure subscription 1(e0ecb960-7f91-487f-bd42-fcc4bf6ab1c1)'
     appType: 'webApp'
     appName: 'WebAppCalculatorSD'
+    resourceGroupName: 'CalculatorGroup'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
 - task: NuGetCommand@2
