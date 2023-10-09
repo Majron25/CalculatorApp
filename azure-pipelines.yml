@@ -34,7 +34,7 @@ steps:
     configuration: '$(buildConfiguration)'
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'e0ecb960-7f91-487f-bd42-fcc4bf6ab1c1'
+    azureSubscription: 'Azure subscription 1'
     appName: 'CalculatorApp'
     appType: 'webAppLinux'
     package: $(System.DefaultWorkingDirectory)/**/*.zip
