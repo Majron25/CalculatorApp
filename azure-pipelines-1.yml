@@ -10,6 +10,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
+  azureSubscription: 'Azure subscription 1(e0ecb960-7f91-487f-bd42-fcc4bf6ab1c1)'
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
@@ -34,7 +35,7 @@ steps:
     configuration: '$(buildConfiguration)'
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'PRD-CITRIX-SUB(373b04c0-0cad-4511-8c50-2ca2040d73eb)'
+    azureSubscription: '$(azureSubscription)'
     appType: 'webApp'
     appName: 'WebAppCalculatorSD'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
