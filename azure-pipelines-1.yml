@@ -36,9 +36,11 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '$(azureSubscription)'
+    azureSubscription: 'Azure subscription 1(01a2685b-2d63-4792-9b28-fbc97a9a51df)'
     appType: 'webApp'
     appName: 'SDCalculatorAppWeb'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deployToSlotOrASE: true
+    resourceGroupName: 'WebAppCalculator'
+    slotName: 'production'
+    package: '$(System.DefaultWorkingDirectory)/**/*'
     deploymentMethod: 'auto'
-
