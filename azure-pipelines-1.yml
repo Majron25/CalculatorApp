@@ -33,11 +33,7 @@ steps:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'CalculatorAppWeb'
     
-# download the artifact drop from the previous job
-- task: DownloadBuildArtifacts@0
-  inputs:
-    artifactName: drop
-    downloadPath: '$(System.DefaultWorkingDirectory)'
+
 - task: AzureWebApp@1
   inputs:
     azureSubscription: '$(azureSubscription)'
