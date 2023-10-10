@@ -21,7 +21,10 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
-
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
@@ -42,5 +45,5 @@ steps:
     deployToSlotOrASE: true
     resourceGroupName: 'WebAppCalculator'
     slotName: 'production'
-    package: '$(System.DefaultWorkingDirectory)/**/*'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
