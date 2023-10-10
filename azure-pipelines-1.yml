@@ -33,6 +33,6 @@ steps:
   inputs:
     azureSubscription: '$(azureSubscription)'
     appType: 'webApp'
-    appName: 'CalculatorApp'
+    appName: 'SDCalculatorAppWeb'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
