@@ -31,7 +31,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
-    artifactName: 'myWebsiteName'
+    artifactName: 'SDCalculatorAppWeb'
 
 - task: AzureWebApp@1
   inputs:
