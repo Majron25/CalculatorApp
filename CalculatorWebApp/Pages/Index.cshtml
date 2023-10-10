@@ -5,6 +5,52 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>The Web App Calculator Is Ready For Deployment</a>.</p>
+    <h1 class="display-4">Calculator</h1>
+    <p>Enter 2 numbers and select a calculation method, then hit calculate</a>.</p>
+</div>
+<div class="text-center">
+    @*This is the webpage display code that submits users *@
+    <form id="form1" runat="server">
+        <input type="text" id="txtNum1" runat="server" />
+        <select id="operation" runat="server">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select>
+        <input type="text" id="txtNum2" runat="server" />
+        <input type="button" value="Calculate" onclick="performCalculation()" />
+        <br />
+
+        @*This is where the result will be displayed*@
+        <asp:Label ID="lblResult" runat="server" Text=""></asp:Label>
+    </form>
+    @*This is the javascript that calculates and output once the user has submitted values*@
+    <script type="text/javascript">
+        function performCalculation() {
+            var num1 = parseFloat(document.getElementById('txtNum1').value);
+            var num2 = parseFloat(document.getElementById('txtNum2').value);
+            var operation = document.getElementById('operation').value;
+            var result;
+
+            switch (operation) {
+                case 'add':
+                    result = num1 + num2;
+                    break;
+                case 'subtract':
+                    result = num1 - num2;
+                    break;
+                case 'multiply':
+                    result = num1 * num2;
+                    break;
+                case 'divide':
+                    result = num1 / num2;
+                    break;
+                default:
+                    result = 'Invalid Operation';
+            }
+
+            document.getElementById('lblResult').innerHTML = 'Result: ' + result;
+        }
+    </script>
 </div>
