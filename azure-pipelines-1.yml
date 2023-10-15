@@ -53,5 +53,6 @@ jobs:
       deployToSlotOrASE: true
       resourceGroupName: 'WebAppCalculator'
       slotName: 'production'
-      package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+      package: '$(System.DefaultWorkingDirectory)/CalculatorAppWeb/**/*.zip'
       deploymentMethod: 'auto'
+
