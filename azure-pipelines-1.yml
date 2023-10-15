@@ -11,7 +11,7 @@ variables:
   buildConfiguration: 'Release'
 
 jobs:
-- job: Build
+- job: Build_Test_Deploy
   steps:
   - task: NuGetToolInstaller@1
   - task: NuGetCommand@2
@@ -27,7 +27,19 @@ jobs:
       msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
       platform: '$(buildPlatform)'
       configuration: '$(buildConfiguration)'
-
+      
+- job: RunUnitTests
+  dependsOn: Build
+  steps:
+  - task: UseDotNet@2
+    inputs:
+      packageType: 'sdk'
+      installationPath: $(Agent.ToolsDirectory)/dotnet
+  - script: dotnet test UnitTestMS/UnitTestMS.csproj --configuration $(buildConfiguration)
+    displayName: 'Run Unit Tests'
+    
+- job: Deploy
+  steps:
   - task: PublishBuildArtifacts@1
     inputs:
       pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
