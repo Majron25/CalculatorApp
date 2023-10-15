@@ -39,19 +39,19 @@ jobs:
     inputs:
       packageType: 'sdk'
       installationPath: $(Agent.ToolsDirectory)/dotnet
-  - script: dotnet test  # Replace with the actual command to run your unit tests
+  - script: dotnet test UnitTestMS/UnitTestMS.csproj --configuration $(buildConfiguration)
     displayName: 'Run Unit Tests'
 
 - job: DeployToAzure
   dependsOn: RunUnitTests
   steps:
-    - task: AzureWebApp@1
-      inputs:
-        azureSubscription: 'Azure subscription 1(01a2685b-2d63-4792-9b28-fbc97a9a51df)'
-        appType: 'webApp'
-        appName: 'SDCalculatorAppWeb'
-        deployToSlotOrASE: true
-        resourceGroupName: 'WebAppCalculator'
-        slotName: 'production'
-        package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-        deploymentMethod: 'auto'
+  - task: AzureWebApp@1
+    inputs:
+      azureSubscription: 'Azure subscription 1(01a2685b-2d63-4792-9b28-fbc97a9a51df)'
+      appType: 'webApp'
+      appName: 'SDCalculatorAppWeb'
+      deployToSlotOrASE: true
+      resourceGroupName: 'WebAppCalculator'
+      slotName: 'production'
+      package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+      deploymentMethod: 'auto'
