@@ -37,14 +37,10 @@ jobs:
       installationPath: $(Agent.ToolsDirectory)/dotnet
   - script: dotnet test UnitTestMS/UnitTestMS.csproj --configuration $(buildConfiguration)
     displayName: 'Run Unit Tests'
-    
-- job: Deploy
-  steps:
   - task: PublishBuildArtifacts@1
     inputs:
       pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
       artifactName: 'CalculatorAppWeb'
-
   - task: AzureWebApp@1
     inputs:
       azureSubscription: 'Azure subscription 1(01a2685b-2d63-4792-9b28-fbc97a9a51df)'
