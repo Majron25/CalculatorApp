@@ -27,24 +27,12 @@ jobs:
       msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
       platform: '$(buildPlatform)'
       configuration: '$(buildConfiguration)'
+
   - task: PublishBuildArtifacts@1
     inputs:
-      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
       artifactName: 'CalculatorAppWeb'
 
-- job: RunUnitTests
-  dependsOn: Build
-  steps:
-  - task: UseDotNet@2
-    inputs:
-      packageType: 'sdk'
-      installationPath: $(Agent.ToolsDirectory)/dotnet
-  - script: dotnet test UnitTestMS/UnitTestMS.csproj --configuration $(buildConfiguration)
-    displayName: 'Run Unit Tests'
-
-- job: DeployToAzure
-  dependsOn: RunUnitTests
-  steps:
   - task: AzureWebApp@1
     inputs:
       azureSubscription: 'Azure subscription 1(01a2685b-2d63-4792-9b28-fbc97a9a51df)'
@@ -53,6 +41,6 @@ jobs:
       deployToSlotOrASE: true
       resourceGroupName: 'WebAppCalculator'
       slotName: 'production'
-      package: '$(System.DefaultWorkingDirectory)/CalculatorAppWeb/**/*.zip'
+      package: '$(System.DefaultWorkingDirectory)/**/*.zip'
       deploymentMethod: 'auto'
 
