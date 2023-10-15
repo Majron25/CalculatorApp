@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\codyc\\source\\repos\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj": {}
+    "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\codyc\\source\\repos\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj": {
+    "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\codyc\\source\\repos\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
+        "projectUniqueName": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
         "projectName": "CalculatorWebApp",
-        "projectPath": "C:\\Users\\codyc\\source\\repos\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
-        "packagesPath": "C:\\Users\\codyc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\codyc\\source\\repos\\CalculatorApp\\CalculatorWebApp\\obj\\",
+        "projectPath": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
+        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+        "outputPath": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\codyc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
