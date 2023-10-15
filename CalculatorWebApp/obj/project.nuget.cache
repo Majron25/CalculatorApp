@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "XSwiCKkTU55NsLZOxM+ht8jhxGZfQCr+2bK+QfkmmBDEsoNSU2DBiyT18g1EWu4Qff5ayt7p8Gm7WOtfPBCmaQ==",
+  "dgSpecHash": "OrpTxRBk+Itdc7e58+Q7RqQ2eXh15ZiJqVoVBR0tZOYs4cDpo8JautVCKJBZmBJJmCdV4RL0qNaP+GM/m9usIg==",
   "success": true,
-  "projectFilePath": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\codyc\\source\\repos\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\codyc\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\codyc\\.nuget\\packages\\mstest.testframework\\3.1.1\\mstest.testframework.3.1.1.nupkg.sha512",
+    "C:\\Users\\codyc\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\codyc\\.nuget\\packages\\selenium.webdriver\\4.14.0\\selenium.webdriver.4.14.0.nupkg.sha512",
+    "C:\\Users\\codyc\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

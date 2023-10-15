@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj": {}
+    "C:\\Users\\codyc\\source\\repos\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj": {}
   },
   "projects": {
-    "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj": {
+    "C:\\Users\\codyc\\source\\repos\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\codyc\\source\\repos\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
         "projectName": "CalculatorWebApp",
-        "projectPath": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
-        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-        "outputPath": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\obj\\",
+        "projectPath": "C:\\Users\\codyc\\source\\repos\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
+        "packagesPath": "C:\\Users\\codyc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\codyc\\source\\repos\\CalculatorApp\\CalculatorWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\codyc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +39,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
