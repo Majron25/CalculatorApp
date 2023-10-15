@@ -11,7 +11,7 @@ variables:
   buildConfiguration: 'Release'
 
 jobs:
-- job: Build_Test_Deploy
+- job: Build
   steps:
   - task: NuGetToolInstaller@1
   - task: NuGetCommand@2
