@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "2+EwZ8VIpPy9aFc+aXOB8dkJ8NDbUfj4lSphpqjgviaoQ1yGrJeP7lSfIaWfrQMEPXan75eKYmmJSB0M/m7upw==",
+  "dgSpecHash": "WrZxfJS5uhWJh3P3s/gN45Eqjg9BdX2MnbPa1BP8yb5coa4d42OYMd3gw0wNttqVeSKu66gYqX2s6RD0xb9JKA==",
   "success": true,
-  "projectFilePath": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
+  "projectFilePath": "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\CalculatorWebApp\\CalculatorWebApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\filip\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
-    "C:\\Users\\filip\\.nuget\\packages\\mstest.testframework\\3.1.1\\mstest.testframework.3.1.1.nupkg.sha512",
-    "C:\\Users\\filip\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\filip\\.nuget\\packages\\selenium.webdriver\\4.14.0\\selenium.webdriver.4.14.0.nupkg.sha512",
-    "C:\\Users\\filip\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+    "C:\\Users\\mitch\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\mitch\\.nuget\\packages\\mstest.testframework\\3.1.1\\mstest.testframework.3.1.1.nupkg.sha512",
+    "C:\\Users\\mitch\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\mitch\\.nuget\\packages\\selenium.webdriver\\4.14.0\\selenium.webdriver.4.14.0.nupkg.sha512",
+    "C:\\Users\\mitch\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

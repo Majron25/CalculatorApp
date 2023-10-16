@@ -3,39 +3,63 @@ namespace UnitTestMS
     [TestClass]
     public class CalculatorTests
     {
-        private IWebDriver _driver;
+        private IWebDriver _driverChrome;
+        private IWebDriver _driverFirefox;
 
         [TestInitialize]
         public void Initialize()
         {
-            _driver = new ChromeDriver(); // You can use other browsers as well
+            _driverChrome = new ChromeDriver(); // You can use other browsers as well
+            _driverFirefox = new FirefoxDriver();
         }
 
         [TestMethod]
-        public void TestCalculator()
+        public void TestCalculatorChrome()
         {
-            _driver.Navigate().GoToUrl("https://sdcalculatorappweb.azurewebsites.net/");
+            _driverChrome.Navigate().GoToUrl("https://sdcalculatorappweb.azurewebsites.net/");
 
-            IWebElement num1 = _driver.FindElement(By.Id("txtNum1"));
+            IWebElement num1 = _driverChrome.FindElement(By.Id("txtNum1"));
             num1.SendKeys("10");
 
-            IWebElement num2 = _driver.FindElement(By.Id("txtNum2"));
+            IWebElement num2 = _driverChrome.FindElement(By.Id("txtNum2"));
             num2.SendKeys("5");
 
-            IWebElement operation = _driver.FindElement(By.Id("operation"));
+            IWebElement operation = _driverChrome.FindElement(By.Id("operation"));
             operation.SendKeys("+");
 
-            IWebElement calculateButton = _driver.FindElement(By.XPath("//input[@value='Calculate']"));
+            IWebElement calculateButton = _driverChrome.FindElement(By.XPath("//input[@value='Calculate']"));
             calculateButton.Click();
 
-            IWebElement resultLabel = _driver.FindElement(By.Id("lblResult"));
+            IWebElement resultLabel = _driverChrome.FindElement(By.Id("lblResult"));
+            Assert.AreEqual("Result: 15", resultLabel.Text);
+        }
+
+        [TestMethod]
+        public void TestCalculatorFirefox()
+        {
+            _driverFirefox.Navigate().GoToUrl("https://sdcalculatorappweb.azurewebsites.net/");
+
+            IWebElement num1 = _driverFirefox.FindElement(By.Id("txtNum1"));
+            num1.SendKeys("10");
+
+            IWebElement num2 = _driverFirefox.FindElement(By.Id("txtNum2"));
+            num2.SendKeys("5");
+
+            IWebElement operation = _driverFirefox.FindElement(By.Id("operation"));
+            operation.SendKeys("+");
+
+            IWebElement calculateButton = _driverFirefox.FindElement(By.XPath("//input[@value='Calculate']"));
+            calculateButton.Click();
+
+            IWebElement resultLabel = _driverFirefox.FindElement(By.Id("lblResult"));
             Assert.AreEqual("Result: 15", resultLabel.Text);
         }
 
         [TestCleanup]
         public void Cleanup()
         {
-            _driver.Quit();
+            _driverChrome.Quit();
+            _driverFirefox.Quit();
         }
     }
 }

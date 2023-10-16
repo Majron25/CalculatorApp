@@ -1,26 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CalculatorApp\\CalculatorApp\\UnitTestMS\\UnitTestMS.csproj": {}
+    "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\UnitTestMS\\UnitTestMS.csproj": {}
   },
   "projects": {
-    "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj": {
+    "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\CalculatorWebApp\\CalculatorWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
+        "projectUniqueName": "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\CalculatorWebApp\\CalculatorWebApp.csproj",
         "projectName": "CalculatorWebApp",
-        "projectPath": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj",
-        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-        "outputPath": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\obj\\",
+        "projectPath": "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\CalculatorWebApp\\CalculatorWebApp.csproj",
+        "packagesPath": "C:\\Users\\mitch\\.nuget\\packages\\",
+        "outputPath": "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\CalculatorWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\mitch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.emzi0767.com/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -70,30 +73,33 @@
         }
       }
     },
-    "D:\\CalculatorApp\\CalculatorApp\\UnitTestMS\\UnitTestMS.csproj": {
+    "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\UnitTestMS\\UnitTestMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CalculatorApp\\CalculatorApp\\UnitTestMS\\UnitTestMS.csproj",
+        "projectUniqueName": "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\UnitTestMS\\UnitTestMS.csproj",
         "projectName": "UnitTestMS",
-        "projectPath": "D:\\CalculatorApp\\CalculatorApp\\UnitTestMS\\UnitTestMS.csproj",
-        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-        "outputPath": "D:\\CalculatorApp\\CalculatorApp\\UnitTestMS\\obj\\",
+        "projectPath": "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\UnitTestMS\\UnitTestMS.csproj",
+        "packagesPath": "C:\\Users\\mitch\\.nuget\\packages\\",
+        "outputPath": "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\UnitTestMS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\mitch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.emzi0767.com/api/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj": {
-                "projectPath": "D:\\CalculatorApp\\CalculatorApp\\CalculatorWebApp\\CalculatorWebApp.csproj"
+              "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\CalculatorWebApp\\CalculatorWebApp.csproj": {
+                "projectPath": "E:\\Data\\Uni Units\\Software Deployment\\Group Assignment\\CalculatorApp-1\\CalculatorWebApp\\CalculatorWebApp.csproj"
               }
             }
           }
@@ -118,7 +124,7 @@
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.5.0, )"
+              "version": "[17.7.2, )"
             },
             "coverlet.collector": {
               "target": "Package",
