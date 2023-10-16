@@ -40,19 +40,19 @@ namespace UnitTestMS
             _driverFirefox.Navigate().GoToUrl("https://sdcalculatorappweb.azurewebsites.net/");
 
             IWebElement num1 = _driverFirefox.FindElement(By.Id("txtNum1"));
-            num1.SendKeys("10");
+            num1.SendKeys("7");
 
             IWebElement num2 = _driverFirefox.FindElement(By.Id("txtNum2"));
-            num2.SendKeys("5");
+            num2.SendKeys("3");
 
             IWebElement operation = _driverFirefox.FindElement(By.Id("operation"));
-            operation.SendKeys("+");
+            operation.SendKeys("-");
 
             IWebElement calculateButton = _driverFirefox.FindElement(By.XPath("//input[@value='Calculate']"));
             calculateButton.Click();
 
             IWebElement resultLabel = _driverFirefox.FindElement(By.Id("lblResult"));
-            Assert.AreEqual("Result: 15", resultLabel.Text);
+            Assert.AreEqual("Result: 4", resultLabel.Text);
         }
 
         [TestCleanup]
