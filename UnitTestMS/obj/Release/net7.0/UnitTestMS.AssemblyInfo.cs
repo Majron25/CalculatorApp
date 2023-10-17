@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("CalculatorWebApp")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("UnitTestMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("CalculatorWebApp")]
-[assembly: System.Reflection.AssemblyTitleAttribute("CalculatorWebApp")]
+[assembly: System.Reflection.AssemblyProductAttribute("UnitTestMS")]
+[assembly: System.Reflection.AssemblyTitleAttribute("UnitTestMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Wygenerowane przez klasę WriteCodeFragment programu MSBuild.
